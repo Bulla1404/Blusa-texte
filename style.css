@@ -52,18 +52,21 @@ body {
     .menu-toggle,
     .spacer-mobile {
         display: none;
-        
+
     }
+
     /* Animação das barrinhas virando um 'X' (opcional, mas fica bonito) */
-.menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-.menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-}
-.menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
-}
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
 
     .menu-navegacao {
         position: absolute;
@@ -210,10 +213,13 @@ body {
     }
 
     /* Quando o menu está ativo no celular */
-.menu-navegacao.active {
-    display: block; /* Ou flex, dependendo do seu layout */
-    left: 0; /* Faz o menu deslizar para dentro da tela */
-}
+    .menu-navegacao.active {
+        display: block;
+        /* Ou flex, dependendo do seu layout */
+        left: 0;
+        /* Faz o menu deslizar para dentro da tela */
+    }
+
     .menu-navegacao ul li a {
         color: #111111;
         display: block;
@@ -320,7 +326,8 @@ body {
     background-color: #ffffff;
 }
 
-.titulo-sessao {  /* Título da seção de produtos */
+.titulo-sessao {
+    /* Título da seção de produtos */
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 900;
@@ -339,22 +346,28 @@ body {
     /* Esconde a barra no Firefox */
 }
 
-.cards-container::-webkit-scrollbar { /* Para navegadores baseados em WebKit (Chrome, Edge) */
+.cards-container::-webkit-scrollbar {
+    /* Para navegadores baseados em WebKit (Chrome, Edge) */
     display: none;
     /* Esconde a barra no Chrome/Edge */
 }
+
 /* FORÇAR O CARROSSEL A FICAR EM FILA ÚNICA */
 .carousel-slide {
-    display: flex !important; /* Muda de Grid para Flex */
-    flex-direction: row !important; /* Garante que fiquem lado a lado */
-    flex-wrap: nowrap !important; /* Proíbe de pular linha */
+    display: flex !important;
+    /* Muda de Grid para Flex */
+    flex-direction: row !important;
+    /* Garante que fiquem lado a lado */
+    flex-wrap: nowrap !important;
+    /* Proíbe de pular linha */
     gap: 20px;
     transition: transform 0.5s ease-in-out;
 }
 
 /* Garante que os cards não encolham para caber na tela */
 .carousel-slide .card-produto {
-    min-width: 250px; /* Largura de cada camisa no carrossel */
+    min-width: 250px;
+    /* Largura de cada camisa no carrossel */
     flex: 0 0 auto;
 }
 
@@ -579,7 +592,8 @@ body {
 /* --- SEÇÃO COMO COMPRAR (MEIO DO SITE) --- */
 .como-comprar-meio {
     padding: 80px 5%;
-    background-color: #1a1a1a; /* Um cinza bem escuro para diferenciar do fundo preto */
+    background-color: #1a1a1a;
+    /* Um cinza bem escuro para diferenciar do fundo preto */
     text-align: center;
 }
 
@@ -591,7 +605,8 @@ body {
 }
 
 .titulo-secao h2 span {
-    color: #e63946; /* Vermelho da sua logo */
+    color: #e63946;
+    /* Vermelho da sua logo */
 }
 
 .titulo-secao p {
@@ -653,7 +668,8 @@ body {
 
 /* --- ESTILIZAÇÃO DO RODAPÉ --- */
 .rodape-completo {
-    background-color: #0a0a0a; /* Preto profundo */
+    background-color: #0a0a0a;
+    /* Preto profundo */
     color: #fff;
     padding: 60px 5% 20px;
 }
@@ -731,8 +747,13 @@ body {
     text-align: center;
 }
 
-.icone-zap { color: #25d366; }
-.icone-insta { color: #e1306c; }
+.icone-zap {
+    color: #25d366;
+}
+
+.icone-insta {
+    color: #e1306c;
+}
 
 .contato-item:hover {
     color: #fff;
@@ -747,6 +768,7 @@ body {
     color: #666;
     font-size: 0.8rem;
 }
+
 .contato-links p {
     margin-bottom: 10px;
 }
@@ -766,7 +788,8 @@ body {
 .contato-item {
     display: flex;
     align-items: center;
-    gap: 12px; /* Espaço entre ícone e texto */
+    gap: 12px;
+    /* Espaço entre ícone e texto */
     margin-bottom: 15px;
 }
 
@@ -797,18 +820,21 @@ body {
 
 /* Define as cores dos ícones para ficarem visíveis */
 .icone-zap {
-    color: #25d366; /* Verde original do WhatsApp */
+    color: #25d366;
+    /* Verde original do WhatsApp */
     font-size: 1.2rem;
 }
 
 .icone-insta {
-    color: #e4405f; /* Rosa/Roxo do Instagram */
+    color: #e4405f;
+    /* Rosa/Roxo do Instagram */
     font-size: 1.2rem;
 }
 
 .contato-item a:hover {
     opacity: 0.8;
-    transform: translateX(5px); /* Efeito suave ao passar o mouse */
+    transform: translateX(5px);
+    /* Efeito suave ao passar o mouse */
 }
 
 /* Ajuste para telas menores (Monitor Vertical) */
@@ -855,7 +881,7 @@ ONDA*/
     max-width: 500px;
     border-radius: 20px;
     /* Adicionando a sombra fixa que você gostou */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     border: 1px solid #ddd;
 }
 
@@ -895,7 +921,7 @@ ONDA*/
     transition: 0.3s;
 }
 
-.selecao-tamanho button:hover, 
+.selecao-tamanho button:hover,
 .selecao-tamanho button.ativo {
     background-color: #e63946;
     color: #fff;
@@ -905,7 +931,8 @@ ONDA*/
 .btn-whats {
     width: 100%;
     padding: 20px;
-    background-color: #25d366; /* Verde do Zap */
+    background-color: #25d366;
+    /* Verde do Zap */
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -927,7 +954,7 @@ ONDA*/
         flex-direction: column;
         padding-top: 100px;
     }
-    
+
     .info-compra {
         text-align: center;
     }
@@ -936,6 +963,7 @@ ONDA*/
         justify-content: center;
     }
 }
+
 /* Fundo da página */
 .produto-pagina {
     background-color: #f4f4f4;
@@ -946,21 +974,25 @@ ONDA*/
 /* Container principal mantendo o formato retangular largo */
 .container-flex {
     display: flex;
-    max-width: 1150px; /* Um pouco mais largo para caber tudo */
+    max-width: 1150px;
+    /* Um pouco mais largo para caber tudo */
     margin: 0 auto;
     background: #ffffff;
-    padding: 30px; /* Reduzi um pouco o padding interno */
+    padding: 30px;
+    /* Reduzi um pouco o padding interno */
     border-radius: 20px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
     gap: 40px;
-    align-items: stretch; /* Faz as colunas terem a mesma altura */
+    align-items: stretch;
+    /* Faz as colunas terem a mesma altura */
 }
+
 /* Deixar a foto imponente */
 .moldura-foto img {
     width: 100%;
     max-width: 450px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .info-compra h1 {
@@ -1001,7 +1033,8 @@ ONDA*/
 /* Botão de WhatsApp mais "Grosso" */
 .btn-whats {
     background: #25d366;
-    border-radius: 50px; /* Arredondado estilo botão moderno */
+    border-radius: 50px;
+    /* Arredondado estilo botão moderno */
     font-size: 1.1rem;
     padding: 18px;
     box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
@@ -1015,6 +1048,7 @@ ONDA*/
         margin-top: 20px;
     }
 }
+
 .opcao-customizar {
     background: #f0f0f0;
     padding: 15px;
@@ -1032,18 +1066,24 @@ ONDA*/
     font-size: 0.9rem;
 }
 
-.container-checkbox input { position: absolute; opacity: 0; cursor: pointer; }
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
 
 .checkmark {
     position: absolute;
-    top: 0; left: 0;
-    height: 25px; width: 25px;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
     background-color: #fff;
     border: 2px solid #ddd;
     border-radius: 4px;
 }
 
-.container-checkbox input:checked ~ .checkmark {
+.container-checkbox input:checked~.checkmark {
     background-color: #e63946;
     border-color: #e63946;
 }
@@ -1052,14 +1092,18 @@ ONDA*/
     content: "";
     position: absolute;
     display: none;
-    left: 9px; top: 5px;
-    width: 5px; height: 10px;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
     border: solid white;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
 }
 
-.container-checkbox input:checked ~ .checkmark:after { display: block; }
+.container-checkbox input:checked~.checkmark:after {
+    display: block;
+}
 
 .grupo-input input {
     width: 100%;
@@ -1094,15 +1138,18 @@ ONDA*/
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
 .btn-tam.ativo {
     background-color: #e63946 !important;
     color: #fff !important;
     border-color: #e63946 !important;
 }
+
 /* --- PÁGINA DE PRODUTO REESTRUTURADA --- */
 .produto-pagina {
     background-color: #f4f4f4;
-    padding: 140px 5% 60px; /* Espaço para o header fixo */
+    padding: 140px 5% 60px;
+    /* Espaço para o header fixo */
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -1112,21 +1159,27 @@ ONDA*/
 .-flex {
     display: flex;
     background: #ffffff;
-    max-width: 1100px; /* Aumentado para ficar mais retangular */
+    max-width: 1100px;
+    /* Aumentado para ficar mais retangular */
     width: 95%;
-    border-radius: 25px; /* Bordas mais suaves como no seu print */
-    box-shadow: 0 15px 45px rgba(0,0,0,0.08);
-    padding: 50px; /* Mais respiro interno */
-    gap: 60px; /* Espaço generoso entre foto e info */
+    border-radius: 25px;
+    /* Bordas mais suaves como no seu print */
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.08);
+    padding: 50px;
+    /* Mais respiro interno */
+    gap: 60px;
+    /* Espaço generoso entre foto e info */
     align-items: flex-starcontainert;
 }
 
 /* Lado Esquerdo: Foto */
 .foto-grande img {
     width: 100%;
-    max-width: 420px; /* Ajuste para equilibrar com o texto ao lado */
+    max-width: 420px;
+    /* Ajuste para equilibrar com o texto ao lado */
     height: 420px;
-    object-fit: contain; /* Garante que a camisa apareça inteira sem cortes */
+    object-fit: contain;
+    /* Garante que a camisa apareça inteira sem cortes */
     background: #fdfdfd;
     border-radius: 20px;
 }
@@ -1137,7 +1190,7 @@ ONDA*/
     height: auto;
     border-radius: 15px;
     object-fit: cover;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 /* Coluna da Direita (Informações) */
@@ -1145,7 +1198,8 @@ ONDA*/
     flex: 1.5;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Espalha os itens verticalmente */
+    justify-content: space-between;
+    /* Espalha os itens verticalmente */
 }
 
 .info-compra h1 {
@@ -1163,9 +1217,12 @@ ONDA*/
 }
 
 /* Reduzir margens dos blocos para compactar */
-.opcao-customizar, .selecao-tamanho-container, .campo-endereco {
+.opcao-customizar,
+.selecao-tamanho-container,
+.campo-endereco {
     padding: 12px 20px;
-    margin-bottom: 8px; /* Margem bem pequena entre os blocos */
+    margin-bottom: 8px;
+    /* Margem bem pequena entre os blocos */
     border: 1.5px solid #d1d1d1;
     border-radius: 12px;
 }
@@ -1173,7 +1230,8 @@ ONDA*/
 /* Ajuste do Input de Endereço para não ter borda dupla */
 .campo-endereco input {
     border: none;
-    border-bottom: 1px solid #eee; /* Linha sutil apenas embaixo */
+    border-bottom: 1px solid #eee;
+    /* Linha sutil apenas embaixo */
     background: transparent;
     width: 100%;
     padding: 8px 0;
@@ -1185,6 +1243,7 @@ ONDA*/
     outline: none;
     border-bottom: 1px solid #e63946;
 }
+
 .selecao-tamanho {
     display: flex;
     gap: 10px;
@@ -1195,10 +1254,12 @@ ONDA*/
 .btn-whats {
     width: 100%;
     padding: 22px;
-    background-color: #2ecc71; /* Verde mais vivo */
+    background-color: #2ecc71;
+    /* Verde mais vivo */
     color: white;
     border: none;
-    border-radius: 15px; /* Menos redondo, mais retangular */
+    border-radius: 15px;
+    /* Menos redondo, mais retangular */
     font-size: 1.2rem;
     font-weight: 900;
     text-transform: uppercase;
@@ -1219,16 +1280,19 @@ ONDA*/
         flex-direction: column;
         padding: 20px;
     }
+
     .foto-grande img {
         max-width: 100%;
     }
 }
+
 /* Definição da animação */
 @keyframes surgir {
     from {
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1238,29 +1302,37 @@ ONDA*/
 /* Estado inicial: Escondido e sem altura */
 /* Estado inicial dos campos (Escondido para a animação) */
 #campos-custom {
-    display: grid; /* Mantemos grid para o layout dos inputs */
+    display: grid;
+    /* Mantemos grid para o layout dos inputs */
     grid-template-columns: 1fr 1fr;
     gap: 10px;
-    max-height: 0; /* Altura zero esconde o conteúdo */
+    max-height: 0;
+    /* Altura zero esconde o conteúdo */
     opacity: 0;
     overflow: hidden;
-    transition: all 0.5s ease-in-out; /* Suavidade */
+    transition: all 0.5s ease-in-out;
+    /* Suavidade */
     margin-top: 0;
 }
 
 /* Classe que o JavaScript vai adicionar para mostrar */
 #campos-custom.visivel {
-    max-height: 200px; /* Abre o espaço */
-    opacity: 1; /* Mostra o texto */
+    max-height: 200px;
+    /* Abre o espaço */
+    opacity: 1;
+    /* Mostra o texto */
     margin-top: 15px;
 }
+
 .btn-tam {
     transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn-tam:active {
-    transform: scale(0.9); /* Efeito de "clique" físico */
+    transform: scale(0.9);
+    /* Efeito de "clique" físico */
 }
+
 /* Estilo do Fundo do Preloader */
 /* Estado inicial: SEMPRE VISÍVEL */
 /* Garante que o preloader comece visível */
@@ -1292,12 +1364,18 @@ ONDA*/
 .loader-hidden {
     opacity: 0 !important;
     visibility: hidden !important;
-    pointer-events: none; /* ESSENCIAL para conseguir clicar no site depois que ele some */
+    pointer-events: none;
+    /* ESSENCIAL para conseguir clicar no site depois que ele some */
 }
 
 @keyframes girar {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Garante que a onda encoste no rodapé sem deixar linha branca */
@@ -1311,6 +1389,57 @@ footer {
 footer svg {
     display: block;
     width: 100%;
-    background-color: #1a1a1a; /* Cor do fundo do rodapé */
-    margin-bottom: -1px; /* Remove fresta branca */
+    background-color: #1a1a1a;
+    /* Cor do fundo do rodapé */
+    margin-bottom: -1px;
+    /* Remove fresta branca */
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Isso impede que o site balance para os lados no celular */
+}
+@media (max-width: 600px) {
+    .card-produto {
+        min-width: 160px; /* Permite que os cards caibam melhor lado a lado ou em telas menores */
+    }
+    
+    .card-imagem {
+        height: 220px; /* Diminui a altura da imagem no celular para não ocupar a tela toda */
+    }
+
+    .banner-conteudo h2 {
+        font-size: 1.8rem; /* Diminui o texto do banner para não cortar */
+    }
+}
+
+@media (max-width: 400px) {
+    .card-produto {
+        min-width: 140px; 
+    }
+    
+    .card-imagem {
+        height: 200px; 
+    }
+
+    /* Aqui ajusta o "Seu Manto" */
+    .banner-conteudo h2 {
+        font-size: 1.8rem;
+        padding-top: 150px; /* Isso joga o Manto para baixo */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner-conteudo h2 span {
+        font-size: 1.4rem !important;
+        margin-top: 5px;
+    }
+
+    /* Isso aqui ajusta os títulos das outras páginas (Clubes) */
+    .titulo-sessao h2 span {
+        display: block !important;
+        font-size: 1.2rem !important;
+        margin-top: 2px;
+        line-height: 1;
+    }
 }
